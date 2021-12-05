@@ -21,11 +21,11 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 //    vector<string> participant{"leo", "kiki", "eden"};
-    vector<string> participant{"marina", "josipa", "nikola", "vinko", "filipa"};
-//    vector<string> participant{"mislav", "stanko", "mislav", "ana"};
+//    vector<string> participant{"marina", "josipa", "nikola", "vinko", "filipa"};
+    vector<string> participant{"mislav", "stanko", "mislav", "ana"};
 //    vector<string> completion{"eden", "kiki"};
-    vector<string> completion{"josipa", "filipa", "marina", "nikola"};
-//    vector<string> completion{"stanko", "ana", "mislav"};
+//    vector<string> completion{"josipa", "filipa", "marina", "nikola"};
+    vector<string> completion{"stanko", "ana", "mislav"};
     cout << solution(participant, completion) << "\n";
     return 0;
 }
