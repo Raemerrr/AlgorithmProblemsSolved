@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/01/BOJ_1949_우수 마을_220124.cpp")
+add_executable(0 "src/BOJ/22/01/BOJ_1208_부분수열의 합 2_220126.cpp")
