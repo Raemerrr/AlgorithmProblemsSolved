@@ -3,4 +3,5 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/01/BOJ_12896_스크루지 민호_220208.cpp")
+add_executable(0 "src/BOJ/22/02/BOJ_2275_트리 높이 줄이기_220209.cpp")
+
