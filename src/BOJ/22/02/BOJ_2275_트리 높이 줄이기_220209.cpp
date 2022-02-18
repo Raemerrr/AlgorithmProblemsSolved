@@ -1,14 +1,12 @@
 #include <iostream>
 #include <vector>
-#include <map>
 #include <algorithm>
 
 using namespace std;
 
 int N, H, root;
-vector<map<int, int>> nodes;
-vector<int> answer;
 vector<int> dist, mx;
+vector<vector<pair<int, int>>> nodes;
 
 int dfs(const int cur) {
     mx[cur] = dist[cur];
@@ -33,7 +31,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cin >> N >> H;
-    nodes.assign(N, map<int, int>());
+    nodes.assign(N, vector<pair<int, int>>());
     dist.assign(N, 0);
     mx.assign(N, 0);
     for (int i = 0; i < N; i++) {
@@ -44,7 +42,7 @@ int main() {
             continue;
         }
         a--;
-        nodes[a][i] = b;
+        nodes[a].emplace_back(i, b);
     }
     dfs(root);
     cout << solution(root, 0) << "\n";
