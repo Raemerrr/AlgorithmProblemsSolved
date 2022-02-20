@@ -11,8 +11,10 @@ vector<vector<pair<int, int>>> nodes;
 int dfs(const int cur) {
     mx[cur] = dist[cur];
     for (const pair<int, int> &d: nodes[cur]) {
-        dist[d.first] = dist[cur] + d.second;
-        mx[cur] = max(mx[cur], dfs(d.first));
+        int _next = d.first;
+        int _cost = d.second;
+        dist[_next] = dist[cur] + _cost;
+        mx[cur] = max(mx[cur], dfs(_next));
     }
     return mx[cur];
 }
@@ -20,9 +22,11 @@ int dfs(const int cur) {
 int solution(const int cur, const int delta) {
     int result = 0;
     for (const pair<int, int> &d: nodes[cur]) {
-        if (mx[d.first] - delta <= H) continue;
-        if (mx[d.first] - delta - d.second <= H) result += mx[d.first] - delta - H;
-        else result += solution(d.first, delta + d.second) + d.second;
+        int _next = d.first;
+        int _cost = d.second;
+        if (mx[_next] - delta <= H) continue;
+        if (mx[_next] - delta - _cost <= H) result += mx[_next] - delta - H;
+        else result += solution(_next, delta + _cost) + _cost;
     }
     return result;
 }
