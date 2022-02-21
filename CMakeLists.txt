@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/02/BOJ_14267_회사 문화 1_220220.cpp")
+add_executable(0 "src/BOJ/22/02/BOJ_1208_부분수열의 합 2_220221.cpp")
