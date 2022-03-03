@@ -11,13 +11,13 @@ vector<int> leftV, rightV;
 vector<LL> leftSum, rightSum;
 LL answer;
 
-void proc(const vector<int> &arr, int index, LL sum, vector<LL> &sumV) {
-    if (index == arr.size()) {
-        sumV.push_back(sum);
+void func(const vector<int> &arr, vector<LL> &sumArr, int idx, LL sum) {
+    if (idx == arr.size()) {
+        sumArr.push_back(sum);
         return;
     }
-    proc(arr, index + 1, sum, sumV);
-    proc(arr, index + 1, sum + arr[index], sumV);
+    func(arr, sumArr, idx + 1, sum);
+    func(arr, sumArr, idx + 1, sum + arr[idx]);
 }
 
 int main() {
@@ -29,10 +29,10 @@ int main() {
         cin >> num;
         (i < N / 2 ? leftV : rightV).push_back(num);
     }
-    proc(leftV, 0, 0, leftSum);
-    proc(rightV, 0, 0, rightSum);
+    func(leftV, leftSum, 0, 0);
+    func(rightV, rightSum, 0, 0);
     sort(leftSum.begin(), leftSum.end());
-    for (const LL d: rightSum) {
+    for (const LL &d: rightSum) {
         auto[lo, hi] = equal_range(leftSum.begin(), leftSum.end(), S - d);
         answer += hi - lo;
     }
