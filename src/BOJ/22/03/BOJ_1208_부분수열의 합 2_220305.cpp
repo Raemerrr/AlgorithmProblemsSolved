@@ -6,9 +6,10 @@ using namespace std;
 
 typedef long long LL;
 
-int N, S, answer;
+int N, S;
 vector<int> leftV, rightV;
 vector<LL> leftSum, rightSum;
+LL answer;
 
 void solution(const vector<int> &arr, vector<LL> &sumV, int idx, LL sum) {
     if (idx == arr.size()) {
