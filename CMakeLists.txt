@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_2309_일곱 난쟁이_220306.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_10808_알파벳 개수_220306.cpp")
