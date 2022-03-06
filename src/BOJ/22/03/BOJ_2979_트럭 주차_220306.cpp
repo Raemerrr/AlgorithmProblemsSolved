@@ -13,7 +13,7 @@ int main() {
     for (int i = 1; i <= 3; i++) cin >> price[i];
     for (int i = 0; i < 3; i++) cin >> v[i].first >> v[i].second;
     sort(v.begin(), v.end());
-    for (int i = 1; i < 100; i++) {
+    for (int i = 1; i <= 100; i++) {
         for (int j = 0; j < 3; j++) {
             if (i == v[j].first) cnt++;
             if (i == v[j].second) cnt--;
