@@ -27,7 +27,6 @@ bool solution(deque<char> &dq, deque<char> &str, bool isFront) {
                 return false;
             }
         }
-
     }
     return true;
 }
