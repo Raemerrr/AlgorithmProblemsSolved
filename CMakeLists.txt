@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_1620_나는야 포켓몬 마스터 이다솜_220309.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_1213_팰린드롬 만들기_220309.cpp")
