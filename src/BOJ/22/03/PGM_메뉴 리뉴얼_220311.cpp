@@ -11,7 +11,7 @@ bool isInclude(const string &pattern, const string &str) {
     return true;
 }
 
-vector<char> createAlpha(vector<string> &orders) {
+vector<char> create(vector<string> &orders) {
     vector<char> alpha;
     for (const string &str: orders) {
         for (const char c: str) {
@@ -46,7 +46,7 @@ map<string, int> count(const vector<string> &orders, const vector<int> &course, 
     return m;
 }
 
-vector<pair<string, int>> orderBy(const map<string, int> &m) {
+vector<pair<string, int>> order(const map<string, int> &m) {
     vector<pair<string, int>> v(m.begin(), m.end());
     sort(v.begin(), v.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
         if (a.second == b.second) {
@@ -79,9 +79,9 @@ vector<string> getAnswer(vector<pair<string, int>> &v) {
 }
 
 vector<string> solution(vector<string> orders, vector<int> course) {
-    vector<char> alpha = createAlpha(orders);
+    vector<char> alpha = create(orders);
     map<string, int> m = count(orders, course, alpha);
-    vector<pair<string, int>> v = orderBy(m);
+    vector<pair<string, int>> v = order(m);
     return getAnswer(v);
 }
 
