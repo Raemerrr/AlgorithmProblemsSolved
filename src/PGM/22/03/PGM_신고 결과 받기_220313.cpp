@@ -7,7 +7,7 @@
 using namespace std;
 
 vector<int> solution(vector<string> id_list, vector<string> report, int k) {
-    vector<int> answer(id_list.size(), 0);;
+    vector<int> answer(id_list.size(), 0);
     vector<int> cnt(id_list.size(), 0);
 
     // 각 id별 인덱스 부여

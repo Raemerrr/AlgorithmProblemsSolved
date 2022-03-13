@@ -3,4 +3,5 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/PGM/22/03/PGM_신고 결과 받기_220313.cpp")
+add_executable(0 "src/PGM/22/03/PGM_주차 요금 계산_220313.cpp")
+
