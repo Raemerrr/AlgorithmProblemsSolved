@@ -3,5 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_8012_한동이는 영업사원!_220316.cpp")
-
+add_executable(0 "src/BOJ/22/03/BOJ_2178_미로 탐색_220317.cpp")
