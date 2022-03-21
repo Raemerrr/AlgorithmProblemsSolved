@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_2583_영역 구하기_220320.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_2828_사과 담기 게임_220321.cpp")
