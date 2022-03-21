@@ -4,15 +4,9 @@ using namespace std;
 
 int N, J, answer;
 
-class Bucket {
-public:
-    int leftPos;
-    int rightPos;
-
-    Bucket() {
-        this->leftPos = 0;
-        this->rightPos = 0;
-    }
+struct Bucket {
+    int leftPos = 0;
+    int rightPos = 0;
 
     int move(int pos) {
         int result = 0;
