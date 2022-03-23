@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_4659_비밀번호 발음하기_220323.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_2870_수학숙제_220324.cpp")
