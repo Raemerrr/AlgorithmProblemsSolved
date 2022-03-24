@@ -3,4 +3,5 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_2870_수학숙제_220324.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_10709_기상캐스터_220325.cpp")
+
