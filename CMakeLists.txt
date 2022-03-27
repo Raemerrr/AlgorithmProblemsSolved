@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_2852_NBA 농구_220327.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_1436_영화감독 숌_220328.cpp")
