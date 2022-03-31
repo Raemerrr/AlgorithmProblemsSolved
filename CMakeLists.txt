@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_1208_부분수열의 합 2_220329.cpp")
+add_executable(0 "src/BOJ/22/03/BOJ_9012_괄호_220331.cpp")
