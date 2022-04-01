@@ -19,9 +19,7 @@ bool checkRange(const int y, const int x) {
 int bfs(const vector<pair<int, int>> &select) {
     int result = emptyPos.size() - 3;
     vector<vector<int>> _board = board;
-    for (const pair<int, int> &d: select) {
-        _board[d.first][d.second] = 1;
-    }
+    for (const pair<int, int> &d: select) _board[d.first][d.second] = 1;
     queue<pair<int, int>> q;
     for (const pair<int, int> &d: virusPos) q.emplace(d);
     while (!q.empty()) {
@@ -52,8 +50,7 @@ int main() {
             else if (board[i][j] == 2) virusPos.emplace_back(i, j);
         }
     }
-    vector<int> select;
-    for (int i = 0; i < emptyPos.size() - 3; i++) select.push_back(0);
+    vector<int> select(emptyPos.size() - 3, 0);
     for (int i = 0; i < 3; i++) select.push_back(1);
     do {
         vector<pair<int, int>> temp;
