@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/03/BOJ_9012_괄호_220331.cpp")
+add_executable(0 "src/BOJ/22/04/BOJ_4949_균형잡힌 세상_220401.cpp")
