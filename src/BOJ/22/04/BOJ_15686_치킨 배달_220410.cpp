@@ -6,9 +6,8 @@ using namespace std;
 
 int N, M, answer = 987654321;
 vector<vector<int>> board;
-vector<pair<int, int>> store, home;
+vector<pair<int, int>> store, home, selectedStore;
 vector<bool> visited;
-vector<pair<int, int>> selectedStore;
 
 void dfs(int index, int cnt) {
     if (cnt == M) {
