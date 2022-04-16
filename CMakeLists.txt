@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/04/BOJ_12764_싸지방에 간 준하_220416.cpp")
+add_executable(0 "src/BOJ/22/04/BOJ_2533_사회망 서비스(SNS)_220416.cpp")
