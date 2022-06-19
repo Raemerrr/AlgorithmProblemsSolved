@@ -3,6 +3,7 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/06/BOJ_3176_도로 네트워크_220617.cpp")
+add_executable(0 "src/BOJ/22/06/BOJ_1922_네트워크 연결_220619.cpp")
+
 
 
