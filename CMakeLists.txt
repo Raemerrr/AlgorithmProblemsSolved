@@ -3,5 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/06/BOJ_1197_최소 스패닝 트리_220619.cpp")
-
+add_executable(0 "src/BOJ/22/07/BOJ_1922_네트워크 연결(1)_220701.cpp")
