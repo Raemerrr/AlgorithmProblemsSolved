@@ -3,4 +3,5 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/07/BOJ_1922_네트워크 연결(1)_220701.cpp")
+add_executable(0 "src/BOJ/22/07/BOJ_1647_도시 분할 계획_220701.cpp")
+
