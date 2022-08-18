@@ -3,4 +3,6 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/08/BOJ_11003_최솟값 찾기_220817.cpp")
+add_executable(0 "src/BOJ/22/08/BOJ_13398_연속합 2_220818.cpp")
+
+
