@@ -3,4 +3,4 @@ project(AlgorithmProblemsSolved)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(0 "src/BOJ/22/09/BOJ_12764_싸지방에 간 준하_220919.cpp")
+add_executable(0 "src/BOJ/22/09/BOJ_11003_최솟값 찾기_220920.cpp")
